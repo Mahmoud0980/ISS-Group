@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 import "./globals.css";
 import BootstrapJS from "./_components/BootstrapJS";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
         </div>
+        <Footer />
         <BootstrapJS />
       </body>
     </html>

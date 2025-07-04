@@ -26,7 +26,7 @@ export default function Portfolio() {
     <>
       <section className="portfolio-section position-relative">
         <div className="overlay"></div>
-        <h2 className="portfolio-title">اخر الاعمال</h2>
+        <h2 className="portfolio-title">آخر الاعمال</h2>
 
         <div className="container">
           <div className="row gy-4">

@@ -1,69 +1,39 @@
-import Image from "next/image";
+export default function NewsTimeline() {
+  const news = [
+    {
+      title: "إطلاق النسخة الجديدة من موقعنا",
+      date: "2025-06-15",
+      summary: "أطلقنا موقعًا بتجربة جديدة وأداء أسرع.",
+    },
+    {
+      title: "مشاركة في مؤتمر تقني عالمي",
+      date: "2025-05-10",
+      summary: "قدمنا أحدث حلول البرمجة في مؤتمر دولي.",
+    },
+    {
+      title: "تحديث سياسة الخصوصية",
+      date: "2025-04-02",
+      summary: "قمنا بتعديل سياسة الخصوصية بما يتماشى مع اللوائح.",
+    },
+  ];
 
-const news = [
-  {
-    title: "إطلاق النسخة الجديدة من موقعنا",
-    date: "2025-06-15",
-    summary:
-      "أطلقنا نسخة جديدة بالكامل من موقعنا بميزات أسرع وتجربة مستخدم أفضل.",
-    image: "/portfolio.jpg",
-    link: "/news/launch-new-site",
-  },
-  {
-    title: "مؤتمر الويب العالمي 2025",
-    date: "2025-05-30",
-    summary: "مشاركتنا في المؤتمر التقني الأكبر كانت مليئة بالإلهام والابتكار.",
-    image: "/portfolio.jpg",
-    link: "/news/web-conference-2025",
-  },
-  {
-    title: "تحديثات أمنية مهمة",
-    date: "2025-04-12",
-    summary: "أضفنا طبقات حماية إضافية لحماية خصوصيتك بشكل أقوى.",
-    image: "/portfolio.jpg",
-    link: "/news/security-update",
-  },
-];
-
-export default function NewsSection() {
   return (
-    <>
-      <section className="news-section py-5">
-        <div className="container">
-          <h2 className="section-title text-center mb-5">اخر الأخبار</h2>
-          <div className="row gy-4">
-            {news.map((item, idx) => (
-              <div key={idx} className="col-12 col-md-6 col-lg-4">
-                <div className="news-card p-3 h-100 d-flex flex-column justify-content-between">
-                  <div>
-                    <div className="news-img-wrapper mb-3">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={400}
-                        height={220}
-                        style={{
-                          objectFit: "cover",
-                          borderRadius: "10px",
-                          width: "100%",
-                        }}
-                      />
-                    </div>
-                    <h5 className="text-white">{item.title}</h5>
-                    <small className="text-muted d-block mb-2">
-                      {new Date(item.date).toLocaleDateString("ar-EG")}
-                    </small>
-                    <p className="text-light">{item.summary}</p>
-                  </div>
-                  <a href={item.link} className="btn btn-outline-light mt-3">
-                    اقرأ المزيد
-                  </a>
-                </div>
+    <section className="timeline-section py-5">
+      <div className="container">
+        <h2 className="text-center mb-5">آخر الأخبار</h2>
+        <div className="timeline">
+          {news.map((item, index) => (
+            <div className="timeline-item" key={index}>
+              <div className="timeline-icon" />
+              <div className="timeline-content">
+                <span className="timeline-date">{item.date}</span>
+                <h5 className="timeline-title">{item.title}</h5>
+                <p className="timeline-summary">{item.summary}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

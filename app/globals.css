@@ -63,7 +63,54 @@ a {
 .priamry-text-color{
   color: #19224D;
 }
+   .hero-section {
+    border-radius: 15px;
+          height: 100vh;
+          background: linear-gradient(
+              rgba(25, 34, 77, 0.8),
+              rgba(25, 34, 77, 0.8)
+            ),
+            url("/portfolio.jpg") no-repeat center center / cover;
+          background-attachment: fixed;
+        }
 
+        h1,
+        p {
+          text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .typing-text {
+          font-weight: 900;
+          color: #ffc107; /* أصفر Bootstrap */
+        }
+
+        .cursor {
+          font-weight: 900;
+          color: #ffc107;
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          0%,
+          50% {
+            opacity: 1;
+          }
+          51%,
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .btn-light {
+          color: #19224d;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+
+        .btn-light:hover {
+          background-color: #fff;
+          transform: scale(1.05);
+        }
 .service-card {
   background: #fff;
   border-radius: 20px;
@@ -206,40 +253,201 @@ a {
      font-size: 0.9rem;
    }
  }
-        .news-section {
-          border-radius: 15px;
-          margin-top: 20px;
-          background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-        }
+         .timeline {
+           position: relative;
+           padding-left: 30px;
+           border-left: 3px solid #19224D;
+         }
     
-        .section-title {
-          color: #fff;
-          font-size: 2.5rem;
-          font-weight: bold;
-          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-        }
+         .timeline-item {
+           position: relative;
+           margin-bottom: 40px;
+         }
     
-        .news-card {
-          background: rgba(255, 255, 255, 0.05);
-          backdrop-filter: blur(10px);
-          border-radius: 15px;
-          transition: all 0.3s ease;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+         .timeline-icon {
+           position: absolute;
+           left: -12px;
+           top: 0;
+           width: 20px;
+           height: 20px;
+           background-color: #19224D;
+           border-radius: 50%;
+           border: 3px solid white;
+         }
     
-        .news-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-        }
+         .timeline-date {
+           font-size: 0.9rem;
+           color: #6c757d;
+         }
     
-        .btn-outline-light {
-          border-radius: 30px;
-          padding: 8px 20px;
-          font-weight: 600;
-        }
+         .timeline-title {
+           font-weight: bold;
+           margin: 5px 0;
+           color :#19224D
+         }
     
-        @media (max-width: 768px) {
-          .section-title {
-            font-size: 2rem;
-          }
-        }
+         .timeline-summary {
+           color: #333;
+         }
+    
+         @media (max-width: 576px) {
+           .timeline {
+             padding-left: 20px;
+           }
+         }
+
+                     .courses-section {
+                      border-radius: 15px;
+                       background-color: #19224d;
+                     }
+          
+                     .accordion-button {
+                       background-color: #fff;
+                       color: #19224d;
+                       border-radius: 0.5rem !important;
+                     }
+          
+                     .accordion-button:focus {
+                       box-shadow: none;
+                     }
+          
+                     .accordion-button:hover {
+                       background-color: #f0f0f0;
+                     }
+          
+                     .accordion-body {
+                       background-color: #fdfdfd;
+                       color: #333;
+                     }
+          
+                     .btn-outline-light:hover {
+                       background-color: #fff;
+                       color: #19224d;
+                       transition: 0.3s ease-in-out;
+                     }
+/* الأساس */
+.contact-section {
+  box-shadow: 0px 0px 2px 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.main-color {
+  color: #19224d;
+}
+
+.main-color-btn {
+  color: #19224d;
+  border: 2px solid #19224d;
+  font-weight: 600;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.main-color-btn:hover {
+  background-color: #19224d;
+  color: #fff;
+  border-color: #19224d;
+  box-shadow: 0 6px 12px rgba(25, 34, 77, 0.5);
+}
+
+/* البطاقة */
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(25, 34, 77, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(25, 34, 77, 0.25);
+}
+
+/* الروابط والأيقونات */
+.hover-effect {
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  color: #19224d;
+  transform: scale(1.05);
+}
+
+.social-icon {
+  color: #19224d;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+  color: #0d1430;
+}
+
+/* الخريطة */
+.map-wrapper iframe {
+  border-radius: 12px;
+  filter: drop-shadow(0 8px 12px rgba(25, 34, 77, 0.15));
+  transition: filter 0.3s ease;
+}
+
+.map-wrapper iframe:hover {
+  filter: drop-shadow(0 12px 20px rgba(25, 34, 77, 0.25));
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .contact-section {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+.site-footer {
+  background-color: #19224d;
+  color: #ffffff;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-icon {
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #0d1430;
+}
+
+@media (max-width: 768px) {
+  .site-footer .row {
+    text-align: center;
+  }
+}

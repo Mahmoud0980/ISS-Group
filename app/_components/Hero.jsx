@@ -1,30 +1,64 @@
-// components/Hero.tsx
-import Image from "next/image";
+"use client";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const phrases = [
+    "تصميم مواقع عصرية",
+    "تطوير تطبيقات قوية",
+    "حلول تسويق رقمية",
+    "تحسين محركات البحث",
+  ];
+
+  const [text, setText] = useState("");
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [letterIndex, setLetterIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    const speed = deleting ? 50 : 150;
+
+    const timeout = setTimeout(() => {
+      if (!deleting) {
+        // كتابة الحروف
+        setText((prev) => prev + phrases[phraseIndex][letterIndex]);
+        if (letterIndex + 1 === phrases[phraseIndex].length) {
+          setDeleting(true);
+          setTimeout(() => {}, 1000); // تأخير بعد كتابة الكلمة كاملة
+        } else {
+          setLetterIndex(letterIndex + 1);
+        }
+      } else {
+        // حذف الحروف
+        setText((prev) => prev.slice(0, -1));
+        if (text.length === 0) {
+          setDeleting(false);
+          setPhraseIndex((phraseIndex + 1) % phrases.length);
+          setLetterIndex(0);
+        }
+      }
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [text, letterIndex, deleting, phraseIndex]);
+
   return (
-    <section className="container mt-5">
-      <div className="row align-items-center">
-        <div className="col-12 col-md-6 d-none d-md-block text-center">
-          <Image
-            src="/hero.gif"
-            alt="Animated Illustration"
-            width={500}
-            height={500}
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6 mb-4 text-start text-md-start">
-          <h1 className="display-5 fw-bold text-end mb-3">
-            مرحبًا بك في ISS group
-          </h1>
-          <p className="lead text-muted text-end">
-            نحن نقدم حلولاً رقمية مبتكرة تساعدك على تطوير أعمالك والوصول لعملائك
-            بسهولة. نجمع بين التصميم الجذاب والتقنيات الحديثة لنضمن لك التميز.
-          </p>
-          <button className="priamry-bgcolor priamry-bgcolor:hover btn btn-primary btn-lg mt-3 float-end">
-            ابدأ الآن
-          </button>
+    <section className="hero-section d-flex align-items-center">
+      <div className="container">
+        <div className="row align-items-center">
+          {/* النصوص */}
+          <div className="col-lg-12 text-white text-center">
+            <h1 className="display-4 fw-bold mb-3">
+              نحن نقدم&nbsp;
+              <span className="typing-text">{text}</span>
+              <span className="cursor">|</span>
+            </h1>
+            <p className="lead mb-4">
+              حلول رقمية متكاملة تساعدك على النمو والنجاح في عالم الإنترنت.
+            </p>
+            <a href="#portfolio" className="btn btn-outline-light btn-lg px-4">
+              اكتشف أعمالنا
+            </a>
+          </div>
         </div>
       </div>
     </section>

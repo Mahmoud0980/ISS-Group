@@ -11,7 +11,7 @@ export default function Header() {
     { href: "https://www.google.com", label: "تواصل معنا" },
   ];
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary mt-3 rounded-3 shadow-sm">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary mt-3 rounded-3 shadow-sm ">
       <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center gap-2" href="#">
           <Image

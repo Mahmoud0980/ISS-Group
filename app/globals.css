@@ -436,14 +436,14 @@ a {
   text-decoration: underline;
 }
 
-.social-icon {
+.social-icon-footer {
   color: #ffffff;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-icon:hover {
+.social-icon-footer:hover {
   transform: scale(1.2);
-  color: #0d1430;
+ 
 }
 
 @media (max-width: 768px) {

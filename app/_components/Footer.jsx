@@ -43,16 +43,16 @@ export default function Footer() {
           <div className="col-md-4">
             <h5 className="text-white mb-3">تابعنا</h5>
             <div className="d-flex gap-3 fs-4">
-              <a href="#" className="social-icon">
+              <a href="#" className="social-icon-footer">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className="social-icon-footer">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className="social-icon-footer">
                 <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="#" className="social-icon">
+              <a href="#" className="social-icon-footer">
                 <i className="bi bi-envelope-fill"></i>
               </a>
             </div>

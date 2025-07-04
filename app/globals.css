@@ -383,7 +383,7 @@ a {
 }
 
 .social-icon {
-  color: #19224d;
+  color: #19224d!important;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }

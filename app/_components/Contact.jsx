@@ -31,16 +31,16 @@ export default function Contact() {
                     href="tel:+1234567890"
                     className="text-decoration-none main-color"
                   >
-                    +123 456 7890
+                    +963 984 900 500
                   </a>
                 </li>
                 <li className="mb-4 d-flex align-items-center gap-3 hover-effect">
                   <i className="bi bi-envelope-fill fs-2 main-color"></i>
                   <a
-                    href="mailto:info@yourcompany.com"
+                    href="iss.group.sy@gmail.com"
                     className="text-decoration-none main-color"
                   >
-                    info@yourcompany.com
+                    iss.group.sy@gmail.com
                   </a>
                 </li>
               </ul>

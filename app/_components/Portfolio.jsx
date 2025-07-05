@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -63,12 +64,12 @@ export default function Portfolio() {
             ))}
           </div>
           <div className="text-center mt-5">
-            <a
+            <Link
               href="/portfolio"
               className="btn btn-lg btn-outline-light px-5 py-2 rounded-pill shadow"
             >
               معرض الأعمال
-            </a>
+            </Link>
           </div>
         </div>
       </section>

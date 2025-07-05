@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function CoursesAccordion() {
   const courses = [
     {
@@ -54,9 +56,9 @@ export default function CoursesAccordion() {
 
         {/* زر عام أسفل القسم */}
         <div className="text-center mt-5">
-          <a href="/courses" className="btn btn-lg btn-outline-light px-5">
+          <Link href="/courses" className="btn btn-lg btn-outline-light px-5">
             مشاهدة جميع الدورات التعليمية
-          </a>
+          </Link>
         </div>
       </div>
     </section>

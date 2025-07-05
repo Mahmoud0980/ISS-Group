@@ -19,7 +19,7 @@ export default function CoursesAccordion() {
   return (
     <section className="courses-section py-5">
       <div className="container">
-        <h2 className="text-center mb-5 text-white fw-bold">
+        <h2 className="text-center mb-5 text-white display-5">
           الدورات التعليمية
         </h2>
 

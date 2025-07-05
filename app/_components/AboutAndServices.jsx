@@ -28,7 +28,7 @@ export default function AboutAndServices() {
     <main className="container py-5">
       {/* قسم من نحن */}
       <section className="mb-5 text-center">
-        <h2 className="fw-bold mb-3">من نحن</h2>
+        <h2 className="fw-bold mb-3 display-5">من نحن</h2>
         <p className="text-muted fs-5">
           نحن شركة متخصصة في تقديم حلول تقنية مبتكرة تساعدك على تطوير مشروعك، من
           التصميم إلى البرمجة والتسويق.

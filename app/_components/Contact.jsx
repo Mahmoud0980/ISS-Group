@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <section className="contact-section py-5">
       <div className="container">
-        <h2 className="text-center mb-5 display-6 fw-bold">تواصل معنا</h2>
+        <h2 className="text-center mb-5 display-5">تواصل معنا</h2>
 
         <div className="row g-5 align-items-center">
           <div className="col-lg-7">

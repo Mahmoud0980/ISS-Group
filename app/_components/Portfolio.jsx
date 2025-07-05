@@ -52,7 +52,9 @@ export default function Portfolio() {
                     />
                     <div className="card-body">
                       <h5 className="card-title">{project.title}</h5>
-                      <p className="card-text">{project.description}</p>
+                      <p className="card-text text-muted">
+                        {project.description}
+                      </p>
                       <button className="btn btn-primary">شاهد المشروع</button>
                     </div>
                   </div>

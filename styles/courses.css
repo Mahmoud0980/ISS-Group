@@ -1,0 +1,69 @@
+.flip-box {
+  background: transparent;
+  perspective: 1000px;
+  height: 250px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.flip-box-front {
+  background-color: #19224d;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #f8f9fa;
+  color: #333;
+  transform: rotateY(180deg);
+  flex-direction: column;
+}
+/**/
+/* فقط على flip-box-front لما تكون قيد التحميل */
+.flip-box-front.skeleton-front {
+  background: linear-gradient(90deg, #e0e0e0 0%, #f8f8f8 50%, #e0e0e0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  min-height: 200px;
+  border-radius: 12px;
+  color: transparent !important; /* لإخفاء النص */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0; /* منع عرض أي حرف */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}

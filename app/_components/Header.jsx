@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Header() {
   const links = [
     { href: "/", label: "الرئيسية" },
-    { href: "portfolio/", label: "المشاريع البرمجية" },
+    { href: "/portfolio", label: "المشاريع البرمجية" },
     { href: "/courses", label: "الدورات التدريبة" },
     { href: "https://www.google.com", label: "اخر الاخبار" },
     { href: "https://www.google.com", label: "تواصل معنا" },

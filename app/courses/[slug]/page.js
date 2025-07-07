@@ -5,23 +5,50 @@ import "@/styles/courseDetails.css";
 import Link from "next/link";
 
 const coursesData = {
-  "web-development": {
-    title: "دورة تطوير الويب",
+  "uiux-beginner": {
+    title: "كورس UI/UX - المستوى الأول",
     description:
-      "تعلم HTML و CSS و JavaScript و React و Next.js لتصبح مطور واجهات محترف.",
-    image: "/Portfolio.jpg",
-    duration: "12 أسبوع",
-    level: "مبتدئ إلى متقدم",
-    instructor: "م. أحمد السعدي",
+      "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام أدوات مثل Figma وAdobe XD.",
+    image: "/uiux.jpg",
+    duration: "6 أسابيع",
+    level: "مبتدئ",
+    instructor: "أ. رزان دعبول",
   },
-  "ai-course": {
-    title: "دورة الذكاء الاصطناعي",
+  "uiux-pro": {
+    title: "كورس UI/UX - مستوى محترف",
     description:
-      "أساسيات تعلم الآلة، الشبكات العصبية، والتعلم العميق باستخدام Python.",
-    image: "/Portfolio.jpg",
+      "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
+    image: "/uiux-pro.jpg",
+    duration: "8 أسابيع",
+    level: "محترف",
+    instructor: "أ. رزان دعبول",
+  },
+  "programming-basics": {
+    title: "أساسيات البرمجة - PHP / Java / C#",
+    description:
+      "مفاهيم البرمجة الأساسية باستخدام لغات متعددة لبناء قاعدة برمجية قوية.",
+    image: "/programming-basics.jpg",
+    duration: "7 أسابيع",
+    level: "مبتدئ",
+    instructor: "م. خالد الأسعد",
+  },
+  "frontend-beginner": {
+    title: "Frontend - React + Next.js (المستوى الأول)",
+    description:
+      "تعلم إنشاء واجهات تفاعلية باستخدام React وNext.js مع مفاهيم أساسية في CSS وJavaScript.",
+    image: "/frontend.jpg",
     duration: "10 أسابيع",
-    level: "متوسط",
-    instructor: "د. نور الدين الزعبي",
+    level: "مبتدئ إلى متوسط",
+    instructor: "م. سليم الخطيب",
+  },
+  "backend-laravel-beginner": {
+    title: "Backend - Laravel (المستوى الأول)",
+    description:
+      "مقدمة في تطوير التطبيقات باستخدام Laravel، قواعد البيانات، والـ MVC Pattern.",
+    image: "/backend.png",
+    duration: "8 أسابيع",
+    level: "مبتدئ",
+    instructor: "م. حسام دياب",
   },
 };
 

@@ -1,0 +1,33 @@
+.timeline-horizontal {
+  display: flex;
+  gap: 30px;
+  border-bottom: 3px solid #19224d;
+  overflow: hidden; /* مهم لنخفي اللي برا الشريط */
+  animation: scroll-left 20s linear infinite;
+}
+
+.timeline-horizontal:hover {
+  animation-play-state: paused; /* لما تحط الماوس توقف الحركة */
+}
+
+.timeline-item {
+  min-width: 250px;
+  flex-shrink: 0;
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+  position: relative;
+}
+
+/* ... باقي التنسيقات نفسها ... */
+
+/* keyframes لحركة التمرير */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 3)); /* -عدد الأخبار * عرض العنصر */
+  }
+}

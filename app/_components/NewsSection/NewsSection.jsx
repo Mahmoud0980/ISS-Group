@@ -1,3 +1,5 @@
+import "./NewsSection.css";
+
 export default function NewsTimeline() {
   const news = [
     {
@@ -21,7 +23,7 @@ export default function NewsTimeline() {
     <section className="timeline-section py-5">
       <div className="container">
         <h2 className="text-center mb-5 display-5">آخر الأخبار</h2>
-        <div className="timeline">
+        <div className="timeline-horizontal">
           {news.map((item, index) => (
             <div className="timeline-item" key={index}>
               <div className="timeline-icon" />

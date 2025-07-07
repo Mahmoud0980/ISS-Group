@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -50,9 +51,12 @@ export default function Hero() {
             <p className="lead mb-4">
               حلول رقمية متكاملة تساعدك على النمو والنجاح في عالم الإنترنت.
             </p>
-            <a href="#portfolio" className="btn btn-outline-light btn-lg px-4">
+            <Link
+              href="../ourprojects"
+              className="btn btn-outline-light btn-lg px-4"
+            >
               اكتشف أعمالنا
-            </a>
+            </Link>
           </div>
         </div>
       </div>

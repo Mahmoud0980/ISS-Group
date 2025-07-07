@@ -1,0 +1,35 @@
+.course-categories {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Portfolio.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  border-radius: 15px;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+.btn-outline-primary {
+  border-color: #19224d;
+  color: #19224d;
+}
+.btn:hover {
+  background-color: #19224d;
+  color: #fff;
+}

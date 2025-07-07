@@ -28,7 +28,7 @@ export default function Contact() {
                 <li className="mb-4 d-flex align-items-center gap-3 hover-effect">
                   <i className="bi bi-telephone-fill fs-2 main-color"></i>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+963984900500"
                     className="text-decoration-none main-color"
                   >
                     +963 984 900 500
@@ -37,7 +37,7 @@ export default function Contact() {
                 <li className="mb-4 d-flex align-items-center gap-3 hover-effect">
                   <i className="bi bi-envelope-fill fs-2 main-color"></i>
                   <a
-                    href="iss.group.sy@gmail.com"
+                    href="mailto:iss.group.sy@gmail.com"
                     className="text-decoration-none main-color"
                   >
                     iss.group.sy@gmail.com
@@ -48,7 +48,7 @@ export default function Contact() {
               <h4 className="mt-5 mb-4 fw-bold main-color">تابعنا على</h4>
               <div className="d-flex gap-4 fs-3">
                 <a
-                  href="https://www.facebook.com/yourpage"
+                  href="https://www.facebook.com/share/16VpFF7X3r/?mibextid=qi2Omg"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -57,7 +57,7 @@ export default function Contact() {
                   <i className="bi bi-facebook"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/yourprofile"
+                  href="https://www.instagram.com/iss.group.sy?igsh=YjE1Y212NmcwZnZv"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -66,7 +66,7 @@ export default function Contact() {
                   <i className="bi bi-instagram"></i>
                 </a>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/963984900500"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
@@ -77,12 +77,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
-          {/* جهة الخريطة */}
         </div>
       </div>
-
-      <style jsx>{``}</style>
     </section>
   );
 }

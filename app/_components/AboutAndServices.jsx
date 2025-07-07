@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 export default function AboutAndServices() {
   const services = [
     {
@@ -36,20 +38,36 @@ export default function AboutAndServices() {
 
   return (
     <main className="container py-5">
-      {/* قسم من نحن */}
-      <section className="mb-5 text-center">
-        <h2 className="mb-3 display-5">
-          نحن في <span style={{ color: "#19224d" }}>ISS Group</span>، نؤمن بأن
-          التكنولوجيا والتعليم هما مفتاح المستقبل
-        </h2>
-        <p className="text-muted fs-5">
-          نعمل على بناء حلول برمجية إبداعية، ونقدّم تدريبات عملية تؤهّل الأفراد
-          لدخول سوق العمل بثقة
-        </p>
-        <p className="text-muted fs-5">
-          رسالتنا هي تمكين كل شخص لديه فكرة، شغف، أو طموح، وتحويله إلى محترف
-          رقمي قادر على التغيير
-        </p>
+      {/* قسم من نحن - سلايدر */}
+      <section className="mb-5">
+        <div
+          id="aboutCarousel"
+          className="carousel slide text-center"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <h3 className="display-5 mb-3">
+              نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
+            </h3>
+            <div className="carousel-item active">
+              <p className="text-muted fs-5">
+                نؤمن بأن التكنولوجيا والتعليم هما مفتاح المستقبل.
+              </p>
+            </div>
+            <div className="carousel-item">
+              <p className="text-muted fs-5">
+                نعمل على بناء حلول برمجية إبداعية، ونقدّم تدريبات عملية تؤهّل
+                الأفراد لدخول سوق العمل بثقة.
+              </p>
+            </div>
+            <div className="carousel-item">
+              <p className="text-muted fs-5">
+                رسالتنا هي تمكين كل شخص لديه فكرة، شغف، أو طموح، وتحويله إلى
+                محترف رقمي قادر على التغيير.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* قسم الخدمات */}

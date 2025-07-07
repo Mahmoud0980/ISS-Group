@@ -243,30 +243,6 @@ body {
   }
 }
 
-.courses-section {
-  border-radius: 15px;
-  background-color: #19224d;
-}
-
-.accordion-button {
-  background-color: #fff;
-  color: #19224d;
-  border-radius: 0.5rem !important;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-button:hover {
-  background-color: #f0f0f0;
-}
-
-.accordion-body {
-  background-color: #fdfdfd;
-  color: #333;
-}
-
 .btn-outline-light:hover {
   background-color: #fff;
   color: #19224d;
@@ -356,42 +332,5 @@ body {
     min-height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-}
-
-.site-footer {
-  background-color: #19224d;
-  color: #ffffff;
-}
-
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.footer-link {
-  color: #cbd5e1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.social-icon-footer {
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icon-footer:hover {
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .site-footer .row {
-    text-align: center;
   }
 }

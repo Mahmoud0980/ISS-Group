@@ -30,7 +30,7 @@ export default function CourseDetailsPage() {
   const course = coursesData[slug];
 
   if (!course)
-    return <p className="text-center py-5">{<Link href={"../courses"} />}</p>;
+    return <p className="text-center py-5">{<Link href={"/courses"} />}</p>;
 
   return (
     <section className="container py-5 course-details">

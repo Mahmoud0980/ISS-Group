@@ -2,12 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const phrases = [
-    "تصميم مواقع عصرية",
-    "تطوير تطبيقات قوية",
-    "حلول تسويق رقمية",
-    "تحسين محركات البحث",
-  ];
+  const phrases = ["حلول برمجية", "تصميم مواقع ويب", "تصميم UI UX"];
 
   const [text, setText] = useState("");
   const [phraseIndex, setPhraseIndex] = useState(0);

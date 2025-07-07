@@ -2,14 +2,14 @@ import "@/styles/courses.css";
 
 const courses = [
   {
-    title: "دورة تطوير الويب",
-    description: "HTML, CSS, JS, React",
-    link: "/courses/web-development",
-  },
-  {
     title: "دورة الذكاء الاصطناعي",
     description: "مقدمة في الذكاء الاصطناعي",
     link: "/courses/ai-course",
+  },
+  {
+    title: "دورة تطوير الويب",
+    description: "HTML, CSS, JS, React",
+    link: "/courses/web-development",
   },
 ];
 

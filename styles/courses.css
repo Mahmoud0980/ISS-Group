@@ -1,69 +1,102 @@
-.flip-box {
-  background: transparent;
-  perspective: 1000px;
-  height: 250px;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
+.courses-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
 }
 
-.flip-box-inner {
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.flip-card {
+  width: 320px;
+  height: 220px;
+  perspective: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
+  border-radius: 12px;
 }
 
-.flip-box:hover .flip-box-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-box-front,
-.flip-box-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  border-radius: 12px;
   backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   border-radius: 12px;
 }
 
-.flip-box-front {
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(25, 34, 77, 0.21);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.flip-card-back {
   background-color: #19224d;
   color: white;
-}
-
-.flip-box-back {
-  background-color: #f8f9fa;
-  color: #333;
   transform: rotateY(180deg);
-  flex-direction: column;
-}
-/**/
-/* فقط على flip-box-front لما تكون قيد التحميل */
-.flip-box-front.skeleton-front {
-  background: linear-gradient(90deg, #e0e0e0 0%, #f8f8f8 50%, #e0e0e0 100%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite linear;
-  min-height: 200px;
-  border-radius: 12px;
-  color: transparent !important; /* لإخفاء النص */
+  padding: 1.5rem;
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: 0; /* منع عرض أي حرف */
+  align-items: center;
+  text-align: center;
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: -200px 0;
-  }
-  100% {
-    background-position: 200px 0;
-  }
+.flip-card-back p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: white;
+  color: #19224d;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #374785;
+  color: white;
+  cursor: pointer;
 }

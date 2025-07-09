@@ -1,6 +1,6 @@
 import AboutAndServices from "./_components/AboutAndServices/AboutAndServices";
 import Hero from "./_components/Hero";
-import Portfolio from "./_components/Portfolio";
+import Portfolio from "./_components/OurProjects/OurProjects.jsx";
 import NewsSection from "./_components/NewsSection/NewsSection";
 import styles from "./page.module.css";
 import Contact from "./_components/Contact/Contact";

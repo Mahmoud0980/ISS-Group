@@ -2,7 +2,7 @@
 import "./Content.css";
 export default function Contact() {
   return (
-    <section className="contact-section py-5">
+    <section className="contact-section py-5" id="contact">
       <div className="container">
         <h2 className="text-center mb-5 display-5">تواصل معنا</h2>
 

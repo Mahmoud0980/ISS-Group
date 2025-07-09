@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 }
 
-/* الشريط الأزرق - ثابت أسفل العناصر */
+/* الشريط الأزرق */
 .timeline-line {
   position: absolute;
   left: 0;
@@ -21,61 +21,66 @@
   overflow: hidden;
   animation: scroll-left 20s linear infinite;
   position: relative;
-  z-index: 2; /* فوق الخط */
+  z-index: 2;
 }
 
 .timeline-horizontal:hover {
   animation-play-state: paused;
 }
 
+/* بطاقة الفليب */
 .timeline-item {
-  min-width: 250px;
+  width: 250px;
+  height: 160px;
+  perspective: 1000px;
   flex-shrink: 0;
+}
+
+.timeline-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.timeline-item:hover .timeline-inner {
+  transform: rotateY(180deg);
+}
+
+/* الجهتين */
+.timeline-front,
+.timeline-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   background: #f8f9fa;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-  transition: all 0.3s ease;
 }
 
-/* الأيقونة */
-.timeline-icon {
-  width: 12px;
-  height: 12px;
-  background-color: #19224d;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px;
-  left: 15px;
-}
-
-/* العنوان ظاهر دائمًا */
-.timeline-title {
+/* الأمام */
+.timeline-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #19224d;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 0;
 }
 
-/* التفاصيل مخفية بالبداية */
-.timeline-details {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
+/* الخلف */
+.timeline-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #555;
 }
 
-/* عند تمرير الماوس على الكرت - تظهر التفاصيل فقط لهذا الكرت */
-.timeline-item:hover .timeline-details {
-  opacity: 1;
-  max-height: 200px;
-  margin-top: 10px;
-}
-
-/* تنسيق التفاصيل */
 .timeline-date {
-  display: block;
   font-size: 14px;
   color: #6c757d;
   margin-bottom: 5px;
@@ -83,7 +88,6 @@
 
 .timeline-summary {
   font-size: 14px;
-  color: #555;
 }
 
 /* حركة العناصر */
@@ -92,8 +96,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      calc(-280px * 3)
-    ); /* عدل العدد حسب عدد الكروت والعرض */
+    transform: translateX(calc(-280px * 3));
   }
 }

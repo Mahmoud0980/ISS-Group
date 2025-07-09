@@ -21,7 +21,7 @@ export default function Courses() {
   ];
 
   return (
-    <section className="course-categories py-5">
+    <section className="course-categories py-5" id="courses">
       <div className="container text-center">
         <h2 className="mb-5 text-white">الدورات التدريبية</h2>
         <div className="row g-4 justify-content-center">

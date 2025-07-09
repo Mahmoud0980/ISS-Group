@@ -1,0 +1,69 @@
+.project-title {
+  color: #19224d;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(25, 34, 77, 0.3);
+}
+
+.card-img-top {
+  height: 250px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+}
+
+.project-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1rem 1.25rem 1.5rem;
+}
+
+.card-title {
+  color: #19224d;
+}
+
+.card-text {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #19224d, #33458b);
+  border: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #33458b, #19224d);
+}
+
+/* مشروع واحد - تفاصيل النص */
+.row.justify-content-center.align-items-center {
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* لما يكون مشروع واحد، نجعل الصورة والنص عمود بدل صف */
+  .row.justify-content-center.align-items-center {
+    flex-direction: column !important;
+  }
+
+  .row.justify-content-center.align-items-center > div {
+    max-width: 100% !important;
+  }
+}

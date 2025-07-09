@@ -5,10 +5,11 @@ import Link from "next/link";
 export default function Header() {
   const links = [
     { href: "/", label: "الرئيسية" },
-    { href: "/ourprojects", label: "المشاريع البرمجية" },
-    { href: "/courses", label: "الدورات التدريبة" },
-    { href: "https://www.google.com", label: "اخر الاخبار" },
-    { href: "https://www.google.com", label: "تواصل معنا" },
+    { href: "/#aboutandservies", label: "من نحن" },
+    { href: "/#ourprojects", label: "المشاريع البرمجية" },
+    { href: "/#courses", label: "الدورات التدريبة" },
+    { href: "/#news", label: "اخر الاخبار" },
+    { href: "/#contact", label: "تواصل معنا" },
   ];
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow mb-4 mt-2">
@@ -50,9 +51,9 @@ export default function Header() {
                   color: " #a6b5ff",
                 }}
               >
-                <Link className="nav-link active fw-semibold" href={link.href}>
+                <a className="nav-link active fw-semibold" href={link.href}>
                   {link.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

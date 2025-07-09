@@ -38,7 +38,7 @@ export default function AboutAndServices() {
   return (
     <main className="container py-5">
       {/* قسم الكاروسيل */}
-      <section className="mb-5">
+      <section className="mb-5" id="aboutandservies">
         <h3 className="display-5 mb-4 text-center">
           نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
         </h3>

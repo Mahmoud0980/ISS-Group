@@ -1,5 +1,3 @@
-import "@/styles/portfolio.css";
-
 const projects = [
   {
     title: "موقع تعليمي",

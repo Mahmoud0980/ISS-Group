@@ -1,5 +1,4 @@
-import React from "react";
-
+import "@/styles/courses.css";
 const courses = [
   {
     title: "كورس UI/UX - المستوى الأول",

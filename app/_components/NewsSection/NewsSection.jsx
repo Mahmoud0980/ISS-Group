@@ -23,17 +23,21 @@ export default function NewsTimeline() {
     <section className="timeline-section py-5">
       <div className="container">
         <h2 className="text-center mb-5 display-5">آخر الأخبار</h2>
-        <div className="timeline-horizontal">
-          {news.map((item, index) => (
-            <div className="timeline-item" key={index}>
-              <div className="timeline-icon" />
-              <div className="timeline-content">
-                <span className="timeline-date">{item.date}</span>
-                <h5 className="timeline-title">{item.title}</h5>
-                <p className="timeline-summary">{item.summary}</p>
+        <div className="timeline-wrapper">
+          <div className="timeline-horizontal">
+            {news.map((item, index) => (
+              <div className="timeline-item" key={index}>
+                <div className="timeline-content">
+                  <h5 className="timeline-title">{item.title}</h5>
+                  <div className="timeline-details">
+                    <span className="timeline-date">{item.date}</span>
+                    <p className="timeline-summary">{item.summary}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="timeline-line" />
         </div>
       </div>
     </section>

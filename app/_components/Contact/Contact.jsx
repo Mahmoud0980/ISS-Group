@@ -1,4 +1,5 @@
 "use client";
+import "./Content.css";
 export default function Contact() {
   return (
     <section className="contact-section py-5">
@@ -30,6 +31,7 @@ export default function Contact() {
                   <a
                     href="tel:+963984900500"
                     className="text-decoration-none main-color"
+                    style={{ direction: "ltr" }}
                   >
                     +963 984 900 500
                   </a>

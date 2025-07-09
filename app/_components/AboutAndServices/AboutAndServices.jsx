@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -38,17 +37,19 @@ export default function AboutAndServices() {
 
   return (
     <main className="container py-5">
-      {/* قسم من نحن - سلايدر */}
+      {/* قسم الكاروسيل */}
       <section className="mb-5">
+        <h3 className="display-5 mb-4 text-center">
+          نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
+        </h3>
+
         <div
           id="aboutCarousel"
-          className="carousel slide text-center"
+          className="carousel slide carousel-fade"
           data-bs-ride="carousel"
+          data-bs-interval="5000"
         >
-          <div className="carousel-inner">
-            <h3 className="display-5 mb-3">
-              نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
-            </h3>
+          <div className="carousel-inner text-center">
             <div className="carousel-item active">
               <p className="text-muted fs-5">
                 نؤمن بأن التكنولوجيا والتعليم هما مفتاح المستقبل.

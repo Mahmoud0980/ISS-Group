@@ -44,7 +44,11 @@ export default function Header() {
               <li
                 className="nav-item link-hover priamry-text-color"
                 key={index}
-                style={{ marginLeft: "15px", fontSize: "16px" }}
+                style={{
+                  marginLeft: "15px",
+                  fontSize: "16px",
+                  color: " #a6b5ff",
+                }}
               >
                 <Link className="nav-link active fw-semibold" href={link.href}>
                   {link.label}

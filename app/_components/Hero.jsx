@@ -3,45 +3,60 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const phrases = ["حلول برمجية", "تصميم مواقع ويب", "تصميم UI UX"];
+  const phrases = ["حلول برمجية متكاملة", "تصميم مواقع ويب", "تصميم UI UX"];
 
   const [text, setText] = useState("");
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [letterIndex, setLetterIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
+  const [pause, setPause] = useState(false);
 
   useEffect(() => {
-    const speed = deleting ? 50 : 150;
+    if (pause) return;
 
-    const timeout = setTimeout(() => {
-      if (!deleting) {
-        // كتابة الحروف
-        setText((prev) => prev + phrases[phraseIndex][letterIndex]);
-        if (letterIndex + 1 === phrases[phraseIndex].length) {
-          setDeleting(true);
-          setTimeout(() => {}, 1000); // تأخير بعد كتابة الكلمة كاملة
+    const typingSpeed = 150;
+    const deletingSpeed = 150;
+
+    const timeout = setTimeout(
+      () => {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (!deleting) {
+          setText((prev) => prev + currentPhrase[letterIndex]);
+
+          if (letterIndex + 1 === currentPhrase.length) {
+            // الكلمة اكتملت
+            if (currentPhrase === "حلول برمجية متكاملة") {
+              setPause(true);
+              setTimeout(() => {
+                setDeleting(true);
+                setPause(false);
+              }, 3000); // توقف 3 ثواني فقط لكلمة "حلول برمجية"
+            } else {
+              setDeleting(true); // لا تأخير لباقي الكلمات
+            }
+          } else {
+            setLetterIndex(letterIndex + 1);
+          }
         } else {
-          setLetterIndex(letterIndex + 1);
+          setText((prev) => prev.slice(0, -1));
+          if (text.length === 0) {
+            setDeleting(false);
+            setPhraseIndex((phraseIndex + 1) % phrases.length);
+            setLetterIndex(0);
+          }
         }
-      } else {
-        // حذف الحروف
-        setText((prev) => prev.slice(0, -1));
-        if (text.length === 0) {
-          setDeleting(false);
-          setPhraseIndex((phraseIndex + 1) % phrases.length);
-          setLetterIndex(0);
-        }
-      }
-    }, speed);
+      },
+      deleting ? deletingSpeed : typingSpeed
+    );
 
     return () => clearTimeout(timeout);
-  }, [text, letterIndex, deleting, phraseIndex]);
+  }, [text, letterIndex, deleting, phraseIndex, pause]);
 
   return (
     <section className="hero-section d-flex align-items-center">
       <div className="container">
         <div className="row align-items-center">
-          {/* النصوص */}
           <div className="col-lg-12 text-white text-center">
             <h1 className="display-4 fw-bold mb-3">
               نحن نقدم&nbsp;

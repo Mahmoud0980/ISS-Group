@@ -58,12 +58,12 @@ export default function Header() {
             ))}
           </ul>
           <form className="d-flex" role="search">
-            <button
+            {/* <button
               className="p-2 priamry-bgcolor priamry-bgcolor:hover btn btn-success "
               type="submit"
             >
               تواصل معنا
-            </button>
+            </button> */}
           </form>
         </div>
       </div>

@@ -110,7 +110,6 @@
   transition: background-color 0.3s ease;
 }
 .btn-course-link:hover {
-  background-color: #fff;
-  color: #374785;
+  color: #fff;
   cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import "@/styles/courses.css";
+import Link from "next/link";
 const courses = [
   {
     title: "كورس UI/UX - المستوى الأول",
@@ -29,9 +30,9 @@ function FlipCard({ course }) {
         </div>
         <div className="flip-card-back">
           <p>{course.description}</p>
-          <a href={course.link} className="btn">
-            مشاهدة الكورس
-          </a>
+          <Link href={course.link} className="btn-course">
+            عرض الكورس
+          </Link>
         </div>
       </div>
     </div>

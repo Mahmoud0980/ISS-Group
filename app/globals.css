@@ -197,7 +197,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #19224d, #19224d);
+  background-color: #19224d8f;
 }
 
 /* Responsive */

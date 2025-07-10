@@ -84,9 +84,9 @@ export default function CourseDetailsPage() {
               <strong>المدرب:</strong> {course.instructor}
             </li>
           </ul>
-          <a href="#" className="btn btn-primary mt-4">
+          <Link href="#" className=" btn btn-primary btn-course-link mt-4">
             سجّل الآن
-          </a>
+          </Link>
         </div>
       </div>
     </section>

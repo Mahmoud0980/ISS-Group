@@ -34,8 +34,8 @@ export default function Footer() {
           <h5>تواصل معنا</h5>
           <ul>
             <li>
-              <a href="tel:+963984900500">
-                <i className="bi bi-telephone-fill me-2"></i>
+              <i className="bi bi-telephone-fill me-2"></i>
+              <a href="tel:+963984900500" style={{ direction: "rtl" }}>
                 +963 984 900 500
               </a>
             </li>
@@ -52,7 +52,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-whatsapp me-2"></i>
-                واتساب مباشر
+                واتساب
               </a>
             </li>
             <li>

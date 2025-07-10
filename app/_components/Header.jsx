@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow mb-4 mt-2">
       <div className="container-fluid">
-        <a className="navbar-brand d-flex align-items-center gap-2" href="#">
+        <a className="navbar-brand d-flex align-items-center gap-2" href={"/"}>
           <Image
             src="/logo.jpg"
             width={50}

@@ -1,4 +1,4 @@
-import "@/styles/courses.css";
+import "./courses.css";
 export default function CoursesLoading() {
   return (
     <section className="container py-5">

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ISS Group1",
+  title: "ISS Group",
   description: "",
   icons: {
     icon: "/logo.jpg",

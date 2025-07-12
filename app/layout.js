@@ -1,10 +1,9 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Geist, Geist_Mono } from "next/font/google";
-import Header from "../app/_components/Header/Header";
-import Footer from "../app/_components/Footer/Footer";
-import "../app/globals.css";
-import "../i18n"; // حمّل التهيئة
+import Header from "./_components/Header/Header";
+import Footer from "./_components/Footer/Footer";
+import "./globals.css";
 import BootstrapJS from "./_components/BootstrapJS";
 
 const geistSans = Geist({
@@ -27,8 +26,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" dir="rtl">
+      <body>
         <div className="container">
           <Header />
           {children}

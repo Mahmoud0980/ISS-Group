@@ -1,21 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
-import i18n from "../../../i18n";
-import { useEffect } from "react";
 
 export default function Header() {
-  const { t } = useTranslation();
-
-  // تغيير الاتجاه بناءً على اللغة المختارة
-  useEffect(() => {
-    const dir = i18n.language === "ar" ? "rtl" : "ltr";
-    document.documentElement.dir = dir;
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
-
   const headerLinks = [
     { href: "/", label: "home" },
     { href: "/#aboutandservies", label: "about" },
@@ -24,11 +10,6 @@ export default function Header() {
     { href: "/#news", label: "news" },
     { href: "/#contact", label: "contact" },
   ];
-
-  const toggleLanguage = () => {
-    const newLang = i18n.language === "ar" ? "en" : "ar";
-    i18n.changeLanguage(newLang);
-  };
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow mb-4 mt-2">
@@ -68,20 +49,14 @@ export default function Header() {
                 }}
               >
                 <Link className="nav-link active fw-semibold" href={link.href}>
-                  {t(`nav.${link.label}`)}
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
 
-          <div className="d-flex">
-            <button
-              className="btn btn-outline-primary"
-              onClick={toggleLanguage}
-            >
-              {t("nav.language")}
-            </button>
-          </div>
+          {/* زر تغيير اللغة */}
+          <div className="d-flex"></div>
         </div>
       </div>
     </nav>

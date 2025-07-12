@@ -1,4 +1,4 @@
-import "@/styles/courses.css";
+import "./courses.css";
 import Link from "next/link";
 const courses = [
   {

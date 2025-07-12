@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import "@/styles/courseDetails.css";
+import "../courseDetails.css";
 import Link from "next/link";
 
 const coursesData = {

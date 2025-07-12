@@ -4,9 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
+import { useEffect } from "react";
 
 export default function Header() {
   const { t } = useTranslation();
+
+  // تغيير الاتجاه بناءً على اللغة المختارة
+  useEffect(() => {
+    const dir = i18n.language === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   const headerLinks = [
     { href: "/", label: "home" },
@@ -20,7 +28,6 @@ export default function Header() {
   const toggleLanguage = () => {
     const newLang = i18n.language === "ar" ? "en" : "ar";
     i18n.changeLanguage(newLang);
-    document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
   };
 
   return (
@@ -60,20 +67,19 @@ export default function Header() {
                   color: "#a6b5ff",
                 }}
               >
-                <a className="nav-link active fw-semibold" href={link.href}>
-                  {t(link.label)}
-                </a>
+                <Link className="nav-link active fw-semibold" href={link.href}>
+                  {t(`nav.${link.label}`)}
+                </Link>
               </li>
             ))}
           </ul>
 
-          {/* زر تغيير اللغة */}
           <div className="d-flex">
             <button
               className="btn btn-outline-primary"
               onClick={toggleLanguage}
             >
-              {t("language")}
+              {t("nav.language")}
             </button>
           </div>
         </div>

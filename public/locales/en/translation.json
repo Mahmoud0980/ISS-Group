@@ -1,9 +1,19 @@
 {
-  "home": "Home",
-  "about": "About",
-  "projects": "Projects",
-  "courses": "Courses",
-  "news": "News",
-  "contact": "Contact",
-  "language": "العربية"
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "courses": "Courses",
+    "news": "News",
+    "contact": "Contact",
+    "language": "العربية"
+  },
+  "hero": {
+    "intro": "We offer",
+    "solutions": "Full software solutions",
+    "web_design": "Web Design",
+    "uiux_design": "UI UX Design",
+    "description": "Complete digital solutions to help you grow and succeed online.",
+    "cta": "Explore our work"
+  }
 }

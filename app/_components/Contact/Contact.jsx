@@ -1,10 +1,19 @@
 "use client";
+
+import { useTranslations } from "next-intl";
 import "./Content.css";
+
 export default function Contact() {
+  const t = useTranslations("contact");
+
   return (
-    <section className="contact-section py-5" id="contact">
+    <section
+      className="contact-section py-5"
+      id="contact"
+      dir={t("dir") || "ltr"}
+    >
       <div className="container">
-        <h2 className="text-center mb-5 display-5">تواصل معنا</h2>
+        <h2 className="text-center mb-5 display-5">{t("title")}</h2>
 
         <div className="row g-5 align-items-center">
           <div className="col-lg-7">
@@ -17,37 +26,37 @@ export default function Contact() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="موقع الشركة"
+                title={t("title")}
               ></iframe>
             </div>
           </div>
-          {/* جهة بيانات الاتصال */}
+          {/* Contact Info Section */}
           <div className="col-lg-5">
             <div className="contact-card p-5 rounded shadow-sm bg-white">
-              <h4 className="mb-4 fw-bold main-color">بيانات الاتصال</h4>
+              <h4 className="mb-4 fw-bold main-color">{t("contactInfo")}</h4>
               <ul className="list-unstyled fs-5 text-dark">
                 <li className="mb-4 d-flex align-items-center gap-3 hover-effect">
                   <i className="bi bi-telephone-fill fs-2 main-color"></i>
                   <a
-                    href="tel:+963984900500"
+                    href={`tel:${t("phone")}`}
                     className="text-decoration-none main-color"
                     style={{ direction: "ltr" }}
                   >
-                    +963 984 900 500
+                    {t("phone")}
                   </a>
                 </li>
                 <li className="mb-4 d-flex align-items-center gap-3 hover-effect">
                   <i className="bi bi-envelope-fill fs-2 main-color"></i>
                   <a
-                    href="mailto:iss.group.sy@gmail.com"
+                    href={`mailto:${t("email")}`}
                     className="text-decoration-none main-color"
                   >
-                    iss.group.sy@gmail.com
+                    {t("email")}
                   </a>
                 </li>
               </ul>
 
-              <h4 className="mt-5 mb-4 fw-bold main-color">تابعنا على</h4>
+              <h4 className="mt-5 mb-4 fw-bold main-color">{t("followUs")}</h4>
               <div className="d-flex gap-4 fs-3">
                 <a
                   href="https://www.facebook.com/share/16VpFF7X3r/?mibextid=qi2Omg"

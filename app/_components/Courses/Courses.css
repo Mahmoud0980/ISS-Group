@@ -1,35 +1,32 @@
-.course-categories {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/Portfolio.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-  border-radius: 15px;
+.text-gradient {
+  color: #19224d;
+}
+
+.course-img-wrapper {
+  overflow: hidden;
+  height: 220px;
+}
+
+.course-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-img {
+  transform: scale(1.08);
 }
 
 .course-card {
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
-
-.course-card img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
-.btn-outline-primary {
-  border-color: #19224d;
-  color: #19224d;
-}
-.btn:hover {
+.card-body-detail {
   background-color: #19224d;
   color: #fff;
 }

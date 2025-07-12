@@ -69,6 +69,7 @@
   color: #19224d;
   font-weight: bold;
   font-size: 18px;
+  height: 110px;
 }
 
 /* الخلف */
@@ -78,6 +79,7 @@
   flex-direction: column;
   justify-content: center;
   color: #555;
+  height: 110px;
 }
 
 .timeline-date {

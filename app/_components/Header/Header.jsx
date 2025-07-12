@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Header() {
+  const t = useTranslations("nav");
+  const router = useRouter();
+  const pathname = usePathname();
+
   const headerLinks = [
     { href: "/", label: "home" },
     { href: "/#aboutandservies", label: "about" },
@@ -10,6 +18,14 @@ export default function Header() {
     { href: "/#news", label: "news" },
     { href: "/#contact", label: "contact" },
   ];
+
+  // التبديل بين اللغات مع الحفاظ على المسار الحالي
+  const toggleLanguage = () => {
+    const newLocale = pathname.startsWith("/ar") ? "en" : "ar";
+    const newPath =
+      pathname.replace(/^\/(en|ar)/, `/${newLocale}`) || `/${newLocale}`;
+    router.push(newPath);
+  };
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow mb-4 mt-2">
@@ -49,14 +65,20 @@ export default function Header() {
                 }}
               >
                 <Link className="nav-link active fw-semibold" href={link.href}>
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               </li>
             ))}
           </ul>
 
-          {/* زر تغيير اللغة */}
-          <div className="d-flex"></div>
+          <div className="d-flex">
+            <button
+              className="btn btn-outline-primary"
+              onClick={toggleLanguage}
+            >
+              {pathname.startsWith("/ar") ? "English" : "العربية"}
+            </button>
+          </div>
         </div>
       </div>
     </nav>

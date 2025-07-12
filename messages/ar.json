@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "projects": "مشاريعنا",
+    "courses": "الدورات",
+    "news": "الأخبار",
+    "contact": "اتصل بنا",
+    "language": "English"
+  }
+  ,"hero": {
+    "title": "نحن نقدم ",
+    "description": "حلول رقمية متكاملة تساعدك على النمو والنجاح في عالم الإنترنت.",
+    "cta": "اكتشف أعمالنا",
+    "typing": [
+      "حلول برمجية متكاملة",
+      "تصميم مواقع ويب",
+      "تصميم UI UX"
+    ]
+  },
+  "about": {
+    "title": "نحن في <span>ISS Group</span>",
+    "slides": [
+      "نؤمن بأن التكنولوجيا والتعليم هما مفتاح المستقبل.",
+      "نقدم حلولاً برمجية إبداعية وتدريبات تؤهل الأفراد لسوق العمل.",
+      "رسالتنا هي تمكين كل شخص لديه فكرة، شغف، أو طموح، وتحويله إلى محترف رقمي."
+    ],
+    "services": [
+      {
+        "title": "تصميم وتطوير المواقع الإلكترونية",
+        "desc": "نصمم مواقع عصرية ومتجاوبة تناسب كل الأجهزة.",
+        "icon": "bi bi-laptop"
+      },
+      {
+        "title": "تطوير تطبيقات الموبايل",
+        "desc": "نبني تطبيقات موبايل قوية باستخدام أحدث التقنيات.",
+        "icon": "bi bi-phone"
+      },
+      {
+        "title": "تصميم واجهات المستخدم وتجربة المستخدم (UI/UX)",
+        "desc": "تنسيق المظهر الخارجي وتحسين تفاعل المستخدم",
+        "icon": "bi bi-window-desktop"
+      },
+      {
+        "title": "تنفيذ مشاريع برمجية حسب الطلب (Custom Software)",
+        "desc": "تطوير برامج مخصصة حسب احتياجات العميل",
+        "icon": "bi bi-code-slash"
+      },
+      {
+        "title": "الاستشارات التقنية ودعم المشاريع الناشئة",
+        "desc": "تقديم نصائح تقنية ومساعدة للشركات الناشئة",
+        "icon": "bi bi-bar-chart-line"
+      },
+      {
+        "title": "إدارة قواعد البيانات والاستضافة",
+        "desc": "تنظيم البيانات وتوفير سيرفرات للتشغيل",
+        "icon": "bi bi-database-check"
+      }
+    ]
+  },  
+  "projects": {
+    "title": "المشاريع البرمجية",
+    "comingSoon": "قريبا",
+    "viewProject": "شاهد المشروع",
+    "portfolio": "المشاريع البرمجية",
+    "items": [
+      {
+        "title": "تطبيق علمني",
+        "description": "تطبيق يساعد الطلاب على الدراسة في مختلف المراحل العمرية.",
+        "link": "https://abc-company.com"
+      }
+    ]
+  },
+  "news": {
+    "title": "آخر الأخبار",
+    "items": [
+      {
+        "title": "إطلاق النسخة الجديدة من موقعنا",
+        "date": "2025-06-15",
+        "summary": "أطلقنا موقعًا بتجربة جديدة وأداء أسرع."
+      },
+      {
+        "title": "مشاركة في مؤتمر تقني عالمي",
+        "date": "2025-05-10",
+        "summary": "قدمنا أحدث حلول البرمجة في مؤتمر دولي."
+      },
+      {
+        "title": "تحديث سياسة الخصوصية",
+        "date": "2025-04-02",
+        "summary": "قمنا بتعديل سياسة الخصوصية بما يتماشى مع اللوائح."
+      }
+    ]
+  },
+  "courses": {
+    "title": "الدورات التدريبية",
+    "more": "عرض المزيد من الدورات التدريبية",
+    "view": "عرض التفاصيل",
+    "list": [
+      {
+        "title": "كورس UI/UX - المستوى الأول",
+        "image": "/uiux.jpg",
+        "slug": "uiux-beginner"
+      },
+      {
+        "title": "كورس UI/UX - مستوى محترف",
+        "image": "/uiux-pro.jpg",
+        "slug": "uiux-pro"
+      },
+      {
+        "title": "أساسيات البرمجة - PHP / Java / C#",
+        "image": "/programming-basics.jpg",
+        "slug": "programming-basics"
+      }
+    ]
+  },
+  "ourprojects": {
+    "title": "أعمالنا",
+    "projects": [
+      {
+        "title": "موقع تعليمي",
+        "description": "منصة تعليمية متكاملة تقدم تجربة تعلم سهلة.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "تطبيق موبايل",
+        "description": "تطبيق لإدارة المهام اليومية باحترافية.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "موقع عقارات",
+        "description": "موقع يعرض العقارات للبيع والإيجار بطريقة منظمة.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      }
+    ],
+    "view": "عرض المشروع"
+  },
+  "coursesSection": {
+    "courses": [
+      {
+        "title": "كورس UI/UX - المستوى الأول",
+        "description": "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام Figma و Adobe XD.",
+        "link": "/courses/uiux-beginner",
+        "image": "/uiux.jpg"
+      },
+      {
+        "title": "كورس UI/UX - مستوى محترف",
+        "description": "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
+        "link": "/courses/uiux-pro",
+        "image": "/uiux-pro.jpg"
+      }
+    ],
+    "viewCourse": "عرض الكورس"
+  },
+  "coursesDetail": {
+    "uiux-beginner": {
+      "title": "كورس UI/UX - المستوى الأول",
+      "description": "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام أدوات مثل Figma وAdobe XD.",
+      "image": "/uiux.jpg",
+      "duration": "6 أسابيع",
+      "level": "مبتدئ",
+      "instructor": "أ. رزان دعبول"
+    },
+    "uiux-pro": {
+      "title": "كورس UI/UX - مستوى محترف",
+      "description": "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
+      "image": "/uiux-pro.jpg",
+      "duration": "8 أسابيع",
+      "level": "محترف",
+      "instructor": "أ. رزان دعبول"
+    },
+    "durationLabel": "المدة:",
+    "levelLabel": "المستوى:",
+    "instructorLabel": "المدرب:",
+    "registerNow": "سجّل الآن"
+  },
+  "contact": {
+    "title": "تواصل معنا",
+     "dir": "rtl",
+    "contactInfo": "بيانات الاتصال",
+    "phone": "+963 984 900 500",
+    "email": "iss.group.sy@gmail.com",
+    "followUs": "تابعنا على"
+  },
+  "footer": {
+    "brandTitle": "ISS Group",
+    "brandDesc": "نطوّر حلولًا رقمية مبتكرة تساعدك على النجاح في العالم الرقمي.",
+    "quickLinksTitle": "روابط سريعة",
+    "links": {
+      "projects": "المشاريع",
+      "courses": "الدورات التعليمية",
+      "services": "الخدمات",
+      "contact": "تواصل معنا"
+    },
+    "contactTitle": "تواصل معنا",
+    "phone": "+963 984 900 500",
+    "email": "iss.group.sy@gmail.com",
+    "whatsapp": "واتساب",
+    "instagram": "تابعنا على إنستغرام",
+    "copyright": "جميع الحقوق محفوظة"
+  }
+
+
+
+
+}

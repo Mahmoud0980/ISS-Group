@@ -1,48 +1,58 @@
+"use client";
+
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "next/router";
 import "./Footer.css";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const locale = useLocale();
+
   return (
-    <footer className="footer-new">
+    <footer className="footer-new" dir={locale === "ar" ? "rtl" : "ltr"}>
       <div className="footer-grid">
         {/* الشعار والنبذة */}
         <div className="footer-brand">
-          <h3>ISS Group</h3>
-          <p>نطوّر حلولًا رقمية مبتكرة تساعدك على النجاح في العالم الرقمي.</p>
+          <h3>{t("brandTitle")}</h3>
+          <p>{t("brandDesc")}</p>
         </div>
 
         {/* روابط سريعة */}
         <div className="footer-links">
-          <h5>روابط سريعة</h5>
+          <h5>{t("quickLinksTitle")}</h5>
           <ul>
             <li>
-              <a href="/">المشاريع</a>
+              <a href="/">{t("links.projects")}</a>
             </li>
             <li>
-              <a href="/about">الدورات التعليمية</a>
+              <a href="/about">{t("links.courses")}</a>
             </li>
             <li>
-              <a href="/services">الخدمات</a>
+              <a href="/services">{t("links.services")}</a>
             </li>
             <li>
-              <a href="/contact">تواصل معنا</a>
+              <a href="/contact">{t("links.contact")}</a>
             </li>
           </ul>
         </div>
 
         {/* تواصل معنا */}
         <div className="footer-contact">
-          <h5>تواصل معنا</h5>
+          <h5>{t("contactTitle")}</h5>
           <ul>
             <li>
               <i className="bi bi-telephone-fill me-2"></i>
-              <a href="tel:+963984900500" style={{ direction: "rtl" }}>
-                +963 984 900 500
+              <a
+                href={`tel:${t("phone")}`}
+                style={{ direction: locale === "ar" ? "rtl" : "ltr" }}
+              >
+                {t("phone")}
               </a>
             </li>
             <li>
-              <a href="mailto:iss.group.sy@gmail.com">
+              <a href={`mailto:${t("email")}`}>
                 <i className="bi bi-envelope-fill me-2"></i>
-                iss.group.sy@gmail.com
+                {t("email")}
               </a>
             </li>
             <li>
@@ -52,7 +62,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-whatsapp me-2"></i>
-                واتساب
+                {t("whatsapp")}
               </a>
             </li>
             <li>
@@ -62,7 +72,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-instagram me-2"></i>
-                تابعنا على إنستغرام
+                {t("instagram")}
               </a>
             </li>
           </ul>
@@ -70,7 +80,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom text-center">
-        <p>© {new Date().getFullYear()} ISS Group - جميع الحقوق محفوظة</p>
+        <p>
+          © {new Date().getFullYear()} {t("brandTitle")} - {t("copyright")}
+        </p>
       </div>
     </footer>
   );

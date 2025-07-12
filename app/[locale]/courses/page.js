@@ -1,23 +1,10 @@
+"use client";
+
 import "./courses.css";
 import Link from "next/link";
-const courses = [
-  {
-    title: "كورس UI/UX - المستوى الأول",
-    description:
-      "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام Figma و Adobe XD.",
-    link: "/courses/uiux-beginner",
-    image: "/uiux.jpg",
-  },
-  {
-    title: "كورس UI/UX - مستوى محترف",
-    description:
-      "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
-    link: "/courses/uiux-pro",
-    image: "/uiux-pro.jpg",
-  },
-];
+import { useTranslations } from "next-intl";
 
-function FlipCard({ course }) {
+function FlipCard({ course, viewText }) {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">
@@ -30,7 +17,7 @@ function FlipCard({ course }) {
         <div className="flip-card-back">
           <p>{course.description}</p>
           <Link href={course.link} className="btn-course">
-            عرض الكورس
+            {viewText}
           </Link>
         </div>
       </div>
@@ -39,11 +26,15 @@ function FlipCard({ course }) {
 }
 
 export default function CoursesPage() {
+  const t = useTranslations("coursesSection");
+  const courses = t.raw("courses");
+  const viewText = t("viewCourse");
+
   return (
     <section className="courses-section">
       <div className="courses-container">
         {courses.map((course, i) => (
-          <FlipCard key={i} course={course} />
+          <FlipCard key={i} course={course} viewText={viewText} />
         ))}
       </div>
     </section>

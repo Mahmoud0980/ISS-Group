@@ -1,0 +1,247 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "courses": "Courses",
+    "news": "News",
+    "contact": "Contact",
+    "language": "العربية"
+  },"hero": {
+    "title": "We offer ",
+    "description": "Integrated digital solutions that help you grow and succeed online.",
+    "cta": "Discover Our Work",
+    "typing": [
+      "Full Software Solutions",
+      "Web Design",
+      "UI/UX Design"
+    ]
+  }
+  ,"about": {
+ "title": "We At <span>ISS Group</span>",
+  "slides": [
+    "We believe that technology and education are the keys to the future.",
+    "We provide innovative software solutions and training that prepare individuals for the job market.",
+    "Our mission is to empower everyone with an idea, passion, or ambition, and transform them into a digital professional."
+  ],
+  "services": [
+    {
+      "title": "Website Design and Development",
+      "desc": "We design modern and responsive websites suitable for all devices.",
+      "icon": "bi bi-laptop"
+    },
+    {
+      "title": "Mobile Application Development",
+      "desc": "We build powerful mobile apps using the latest technologies.",
+      "icon": "bi bi-phone"
+    },
+    {
+      "title": "UI/UX Design",
+      "desc": "Coordinating the visual appearance and improving user interaction.",
+      "icon": "bi bi-window-desktop"
+    },
+    {
+      "title": "Custom Software Development",
+      "desc": "Developing customized software tailored to client needs.",
+      "icon": "bi bi-code-slash"
+    },
+    {
+      "title": "Technical Consulting and Startup Support",
+      "desc": "Providing technical advice and assistance to startups.",
+      "icon": "bi bi-bar-chart-line"
+    },
+    {
+      "title": "Database Management and Hosting",
+      "desc": "Organizing data and providing servers for operation.",
+      "icon": "bi bi-database-check"
+    }
+  ]
+},
+  "projects": {
+    "title": "Our projects",
+    "comingSoon": "Coming Soon",
+    "viewProject": "View Project",
+    "portfolio": "Our projects",
+    "items": [
+      {
+        "title": "Allamni App",
+        "description": "An app that helps students study across different age groups.",
+        "link": "https://abc-company.com"
+      }
+    ]
+  },
+  "news": {
+    "title": "Latest News",
+    "items": [
+      {
+        "title": "Launch of our new website",
+        "date": "2025-06-15",
+        "summary": "We launched a website with a new experience and faster performance."
+      },
+      {
+        "title": "Participation in a global tech conference",
+        "date": "2025-05-10",
+        "summary": "We presented the latest programming solutions at an international conference."
+      },
+      {
+        "title": "Privacy policy update",
+        "date": "2025-04-02",
+        "summary": "We updated the privacy policy to comply with regulations."
+      }
+    ]
+  },"courses": {
+    "title": "Training Courses",
+    "more": "View more training courses",
+    "view": "View Details",
+    "list": [
+      {
+        "title": "UI/UX Course - Beginner Level",
+        "image": "/uiux.jpg",
+        "slug": "uiux-beginner"
+      },
+      {
+        "title": "UI/UX Course - Professional Level",
+        "image": "/uiux-pro.jpg",
+        "slug": "uiux-pro"
+      },
+      {
+        "title": "Programming Basics - PHP / Java / C#",
+        "image": "/programming-basics.jpg",
+        "slug": "programming-basics"
+      }
+    ]
+  }, 
+  "ourprojects": {
+    "title": "Our Projects",
+    "projects": [
+      {
+        "title": "Educational Website",
+        "description": "An integrated learning platform providing a smooth educational experience.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Mobile App",
+        "description": "An app to professionally manage daily tasks.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Real Estate Website",
+        "description": "A site for listing properties for sale and rent in an organized way.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Real Estate Website",
+        "description": "A site for listing properties for sale and rent in an organized way.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Real Estate Website",
+        "description": "A site for listing properties for sale and rent in an organized way.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Real Estate Website",
+        "description": "A site for listing properties for sale and rent in an organized way.",
+        "image": "/Portfolio.jpg",
+        "link": "#"
+      }
+    ],
+    "view": "View Project"
+  }, "coursesSection": {
+    "courses": [
+      {
+        "title": "UI/UX Course - Beginner Level",
+        "description": "An introduction to user experience and interface design using Figma and Adobe XD.",
+        "link": "/courses/uiux-beginner",
+        "image": "/uiux.jpg"
+      },
+      {
+        "title": "UI/UX Course - Professional Level",
+        "description": "Advanced design, user research, and usability testing for professional applications.",
+        "link": "/courses/uiux-pro",
+        "image": "/uiux-pro.jpg"
+      }
+    ],
+    "viewCourse": "View Course"
+  },
+  "coursesDetail": {
+    "uiux-beginner": {
+      "title": "UI/UX Course - Beginner Level",
+      "description": "An introduction to user experience and interface design using tools like Figma and Adobe XD.",
+      "image": "/uiux.jpg",
+      "duration": "6 weeks",
+      "level": "Beginner",
+      "instructor": "Ms. Razan Daaboul"
+    },
+    "uiux-pro": {
+      "title": "UI/UX Course - Professional Level",
+      "description": "Advanced design, user research, and usability testing for professional applications.",
+      "image": "/uiux-pro.jpg",
+      "duration": "8 weeks",
+      "level": "Professional",
+      "instructor": "Ms. Razan Daaboul"
+    },
+    "programming-basics": {
+      "title": "Programming Basics - PHP / Java / C#",
+      "description": "Core programming concepts using multiple languages to build a strong coding foundation.",
+      "image": "/programming-basics.jpg",
+      "duration": "7 weeks",
+      "level": "Beginner",
+      "instructor": "Eng. Khaled Al-Assad"
+    },
+    "frontend-beginner": {
+      "title": "Frontend - React + Next.js (Beginner Level)",
+      "description": "Learn to build interactive interfaces using React and Next.js with basic CSS and JavaScript concepts.",
+      "image": "/frontend.jpg",
+      "duration": "10 weeks",
+      "level": "Beginner to Intermediate",
+      "instructor": "Eng. Saleem Al-Khatib"
+    },
+    "backend-laravel-beginner": {
+      "title": "Backend - Laravel (Beginner Level)",
+      "description": "Introduction to app development using Laravel, databases, and MVC pattern.",
+      "image": "/backend.png",
+      "duration": "8 weeks",
+      "level": "Beginner",
+      "instructor": "Eng. Hossam Diab"
+    },
+     "durationLabel": "Duration:",
+  "levelLabel": "Level:",
+  "instructorLabel": "Instructor:",
+  "registerNow": "Register Now",
+  "backToCourses": "Back to Courses"
+  },"contact": {
+    "title": "Contact Us",
+     "dir": "ltr",
+    "contactInfo": "Contact Information",
+    "phone": "+963 984 900 500",
+    "email": "iss.group.sy@gmail.com",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "brandTitle": "ISS Group",
+    "brandDesc": "We develop innovative digital solutions to help you succeed in the digital world.",
+    "quickLinksTitle": "Quick Links",
+    "links": {
+      "projects": "Projects",
+      "courses": "Courses",
+      "services": "Services",
+      "contact": "Contact Us"
+    },
+    "contactTitle": "Contact Us",
+    "phone": "+963 984 900 500",
+    "email": "iss.group.sy@gmail.com",
+    "whatsapp": "WhatsApp",
+    "instagram": "Follow us on Instagram",
+    "copyright": "All rights reserved"
+  }
+
+
+ 
+}
+

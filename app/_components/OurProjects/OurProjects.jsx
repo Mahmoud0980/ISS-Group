@@ -1,30 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-
-const projects = [
-  {
-    title: "تطبيق علمني",
-    description: "تطبيق يساعد الطلاب على الدراسة في مختلف المراحل العمرية.",
-    image: "/portfolio.jpg",
-    link: "https://abc-company.com",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function ProjectsSection() {
+  const t = useTranslations("projects");
+
+  // البيانات الآن تجي من الترجمة
+  const projects = t.raw("items");
   const isSingle = projects.length === 1;
 
   return (
     <section className="project-section py-5" id="ourprojects">
       <div className="container">
         <h2 className="text-center mb-5 display-5 project-title">
-          المشاريع البرمجية
+          {t("title")}
         </h2>
 
         {isSingle ? (
           <div className="row justify-content-center align-items-center">
             <div className="col-12 col-md-6">
               <Image
-                src={projects[0].image}
+                src="/portfolio.jpg"
                 alt={projects[0].title}
                 width={500}
                 height={350}
@@ -41,7 +39,7 @@ export default function ProjectsSection() {
                 rel="noopener noreferrer"
                 className="btn btn-primary rounded-pill px-4 py-2"
               >
-                <i className="bi bi-hourglass"></i> قريبا
+                <i className="bi bi-hourglass"></i> {t("comingSoon")}
               </Link>
             </div>
           </div>
@@ -51,7 +49,7 @@ export default function ProjectsSection() {
               <div className="col-12 col-md-6 col-lg-4" key={idx}>
                 <div className="card project-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
                   <Image
-                    src={project.image}
+                    src="/portfolio.jpg"
                     alt={project.title}
                     width={400}
                     height={250}
@@ -70,7 +68,7 @@ export default function ProjectsSection() {
                       rel="noopener noreferrer"
                       className="btn btn-primary rounded-pill px-4 py-2"
                     >
-                      شاهد المشروع
+                      {t("viewProject")}
                     </a>
                   </div>
                 </div>
@@ -84,7 +82,7 @@ export default function ProjectsSection() {
             href="/ourprojects"
             className="btn btn-outline-secondary rounded-pill px-5 py-2"
           >
-            معرض الأعمال
+            {t("portfolio")}
           </Link>
         </div>
       </div>

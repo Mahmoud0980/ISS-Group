@@ -1,7 +1,15 @@
+"use client";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState, useEffect } from "react";
+import "./AboutAndServices.css";
 
 export default function AboutAndServices() {
+  const slides = [
+    "نؤمن بأن التكنولوجيا والتعليم هما مفتاح المستقبل.",
+    "نقدم حلولاً برمجية إبداعية وتدريبات تؤهل الأفراد لسوق العمل.",
+    "رسالتنا هي تمكين كل شخص لديه فكرة، شغف، أو طموح، وتحويله إلى محترف رقمي.",
+  ];
   const services = [
     {
       title: "تصميم وتطوير المواقع الإلكترونية",
@@ -34,11 +42,23 @@ export default function AboutAndServices() {
       icon: "bi bi-database-check",
     },
   ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setAnimate(false); // لإعادة تشغيل الأنميشن
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % slides.length);
+        setAnimate(true);
+      }, 100); // وقت قصير جداً لإعادة تعيين الكلاس
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <main className="container py-5">
-      {/* قسم الكاروسيل */}
-      <section className="mb-5" id="aboutandservies">
+      {/* <section className="mb-5" id="aboutandservies">
         <h3 className="display-5 mb-4 text-center">
           نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
         </h3>
@@ -47,7 +67,7 @@ export default function AboutAndServices() {
           id="aboutCarousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
-          data-bs-interval="5000"
+          data-bs-interval="1500"
         >
           <div className="carousel-inner text-center">
             <div className="carousel-item active">
@@ -68,6 +88,28 @@ export default function AboutAndServices() {
               </p>
             </div>
           </div>
+        </div>
+      </section> */}
+      <section
+        className="mb-5 text-center container"
+        id="aboutandservies"
+        dir="rtl"
+      >
+        <h3 className="display-5 mb-4">
+          نحن في <span style={{ color: "#19224d" }}>ISS Group</span>
+        </h3>
+
+        <div
+          className="p-4 rounded shadow-sm min-height"
+          style={{ minHeight: "100px" }}
+        >
+          <p
+            className={`text-muted fs-5 m-0 transition-text ${
+              animate ? "fade-in-up" : ""
+            }`}
+          >
+            {slides[currentIndex]}
+          </p>
         </div>
       </section>
 

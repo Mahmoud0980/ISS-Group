@@ -1,4 +1,5 @@
 "use client";
+import "./Hero.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -68,7 +69,7 @@ export default function Hero() {
             </p>
             <Link
               href="../ourprojects"
-              className="btn btn-outline-light btn-lg px-4"
+              className="btn-hero btn-outline-light btn-lg px-4"
             >
               اكتشف أعمالنا
             </Link>

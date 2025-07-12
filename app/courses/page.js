@@ -15,7 +15,6 @@ const courses = [
     link: "/courses/uiux-pro",
     image: "/uiux-pro.jpg",
   },
-  // أضف باقي الكورسات هنا
 ];
 
 function FlipCard({ course }) {

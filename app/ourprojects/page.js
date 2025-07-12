@@ -1,3 +1,4 @@
+"use client";
 const projects = [
   {
     title: "موقع تعليمي",
@@ -37,8 +38,7 @@ const projects = [
   },
 ];
 
-export default async function ourprojects() {
-  await new Promise((resolve) => setTimeout(resolve, 1500));
+export default function ourprojects() {
   return (
     <section className="container py-5">
       <h2 className="display-2 text-center">أعمالنا</h2>

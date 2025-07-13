@@ -42,11 +42,8 @@ export default function Footer() {
           <ul>
             <li>
               <i className="bi bi-telephone-fill me-2"></i>
-              <a
-                href={`tel:${t("phone")}`}
-                style={{ direction: locale === "ar" ? "rtl" : "ltr" }}
-              >
-                {t("phone")}
+              <a href={`tel:${t("phone")}`}>
+                <span dir="ltr">{t("phone")}</span>
               </a>
             </li>
             <li>

@@ -60,7 +60,7 @@ export default function Header() {
                 key={index}
                 style={{
                   marginLeft: "15px",
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "#a6b5ff",
                 }}
               >
@@ -73,7 +73,7 @@ export default function Header() {
 
           <div className="d-flex">
             <button
-              className="btn btn-outline-primary"
+              className="btn-change-lang btn-primary"
               onClick={toggleLanguage}
             >
               {pathname.startsWith("/ar") ? "English" : "العربية"}

@@ -67,7 +67,7 @@
       {
         "title": "تطبيق علمني",
         "description": "تطبيق يساعد الطلاب على الدراسة في مختلف المراحل العمرية.",
-        "link": "https://abc-company.com"
+        "link": "#"
       }
     ]
   },
@@ -116,24 +116,7 @@
   "ourprojects": {
     "title": "أعمالنا",
     "projects": [
-      {
-        "title": "موقع تعليمي",
-        "description": "منصة تعليمية متكاملة تقدم تجربة تعلم سهلة.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "تطبيق موبايل",
-        "description": "تطبيق لإدارة المهام اليومية باحترافية.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "موقع عقارات",
-        "description": "موقع يعرض العقارات للبيع والإيجار بطريقة منظمة.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      }
+    
     ],
     "view": "عرض المشروع"
   },

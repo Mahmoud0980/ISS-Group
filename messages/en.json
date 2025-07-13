@@ -114,42 +114,7 @@
   "ourprojects": {
     "title": "Our Projects",
     "projects": [
-      {
-        "title": "Educational Website",
-        "description": "An integrated learning platform providing a smooth educational experience.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "Mobile App",
-        "description": "An app to professionally manage daily tasks.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "Real Estate Website",
-        "description": "A site for listing properties for sale and rent in an organized way.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "Real Estate Website",
-        "description": "A site for listing properties for sale and rent in an organized way.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "Real Estate Website",
-        "description": "A site for listing properties for sale and rent in an organized way.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      },
-      {
-        "title": "Real Estate Website",
-        "description": "A site for listing properties for sale and rent in an organized way.",
-        "image": "/Portfolio.jpg",
-        "link": "#"
-      }
+      
     ],
     "view": "View Project"
   }, "coursesSection": {

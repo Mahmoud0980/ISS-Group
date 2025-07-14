@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function Header() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -19,18 +20,20 @@ export default function Header() {
     { href: "/#contact", label: "contact" },
   ];
 
-  // التبديل بين اللغات مع الحفاظ على المسار الحالي
+  // تغيير اللغة مع الحفاظ على الصفحة الحالية
   const toggleLanguage = () => {
-    const newLocale = pathname.startsWith("/ar") ? "en" : "ar";
-    const newPath =
-      pathname.replace(/^\/(en|ar)/, `/${newLocale}`) || `/${newLocale}`;
-    router.push(newPath);
+    const newLocale = locale === "ar" ? "en" : "ar";
+    const pathWithoutLocale = pathname.replace(/^\/(ar|en)/, ""); // remove current locale
+    router.push(`/${newLocale}${pathWithoutLocale}`);
   };
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow mb-4 mt-2">
       <div className="container-fluid">
-        <Link className="navbar-brand d-flex align-items-center gap-2" href="/">
+        <Link
+          className="navbar-brand d-flex align-items-center gap-2"
+          href={`/${locale}`}
+        >
           <Image
             src="/logo.jpg"
             width={50}
@@ -64,7 +67,10 @@ export default function Header() {
                   color: "#a6b5ff",
                 }}
               >
-                <Link className="nav-link active fw-semibold" href={link.href}>
+                <Link
+                  className="nav-link active fw-semibold"
+                  href={`/${locale}${link.href}`}
+                >
                   {t(link.label)}
                 </Link>
               </li>
@@ -76,7 +82,7 @@ export default function Header() {
               className="btn-change-lang btn-primary"
               onClick={toggleLanguage}
             >
-              {pathname.startsWith("/ar") ? "English" : "العربية"}
+              {locale === "ar" ? "En" : "Ar"}
             </button>
           </div>
         </div>

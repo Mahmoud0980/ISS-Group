@@ -37,7 +37,8 @@ export default function ProjectsSection() {
                 href={projects[0].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary rounded-pill px-4 py-2"
+                className="btn btn-primary rounded-pill px-4 py-2 disabled"
+                style={{ pointerEvents: "none", opacity: 0.6 }}
               >
                 <i className="bi bi-hourglass"></i> {t("comingSoon")}
               </Link>
@@ -67,6 +68,7 @@ export default function ProjectsSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary rounded-pill px-4 py-2"
+                      disabled
                     >
                       {t("viewProject")}
                     </a>

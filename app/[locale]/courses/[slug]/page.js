@@ -26,31 +26,24 @@ export default function CourseDetailsPage() {
   }
 
   return (
-    <section className="container py-5 course-details">
-      <div className="row align-items-center">
-        <div className="col-md-6 mb-4 mb-md-0">
-          <img
-            src={course.image}
-            alt={course.title}
-            className="img-fluid rounded shadow"
-            style={{ width: "700px", height: "300px" }}
-          />
-        </div>
-        <div className="col-md-6">
-          <h1 className="mb-3 fw-bold">{course.title}</h1>
-          <p className="lead">{course.description}</p>
-          <ul className="list-unstyled mt-4">
+    <section className="container py-4">
+      <div className="course-card-mini">
+        <img src={course.image} alt={course.title} />
+        <div className="course-info">
+          <h2>{course.title}</h2>
+          <p>{course.description}</p>
+          <ul>
             <li>
-              <strong>{t("durationLabel")}</strong> {course.duration}
+              <strong>{t("durationLabel")}:</strong> {course.duration}
             </li>
             <li>
-              <strong>{t("levelLabel")}</strong> {course.level}
+              <strong>{t("levelLabel")}:</strong> {course.level}
             </li>
             <li>
-              <strong>{t("instructorLabel")}</strong> {course.instructor}
+              <strong>{t("instructorLabel")}:</strong> {course.instructor}
             </li>
           </ul>
-          <Link href="#" className="btn btn-primary btn-course-link mt-4">
+          <Link href="#" className="course-btn">
             {t("registerNow")}
           </Link>
         </div>

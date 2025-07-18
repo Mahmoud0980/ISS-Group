@@ -19,15 +19,15 @@ export default function Contact() {
           <div className="col-lg-7">
             <div className="map-wrapper rounded shadow-sm overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d338.3948004363872!2d37.13912937937083!3d36.206151266424335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2snl!4v1751616451908!5m2!1sar!2snl"
+                src="https://www.google.com/maps?q=36.206151266424335,37.13912937937083&hl=ar&z=18&output=embed"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title={t("title")}
-              ></iframe>
+              />
             </div>
           </div>
           {/* Contact Info Section */}

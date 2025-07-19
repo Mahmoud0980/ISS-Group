@@ -116,7 +116,15 @@
   "ourprojects": {
     "title": "أعمالنا",
     "projects": [
-    
+      {
+    "title": "علمني",
+    "description": "تطبيق يساعد الطلاب على الدراسة في مختلف المراحل العمرية",
+    "image": "/Portfolio.jpg",
+    "link": "#",
+    "buttonText": "قريبًا",
+    "disabled": true
+  }
+
     ],
     "view": "عرض المشروع"
   },

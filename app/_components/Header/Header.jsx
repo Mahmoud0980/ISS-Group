@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
-
+import "./Header.css";
 export default function Header() {
   const t = useTranslations("nav");
   const locale = useLocale();
@@ -78,10 +78,7 @@ export default function Header() {
           </ul>
 
           <div className="d-flex">
-            <button
-              className="btn-change-lang btn-primary"
-              onClick={toggleLanguage}
-            >
+            <button className="btn-change-lang" onClick={toggleLanguage}>
               {locale === "ar" ? "En" : "Ar"}
             </button>
           </div>

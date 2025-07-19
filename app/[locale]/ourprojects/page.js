@@ -28,10 +28,15 @@ export default function OurProjectsPage() {
                 <h5 className="text-dark fw-bold">{project.title}</h5>
                 <p className="text-muted small">{project.description}</p>
                 <a
-                  href={project.link}
-                  className="btn btn-primary rounded-pill px-4"
+                  href={project.disabled ? undefined : project.link}
+                  className={`btn btn-primary rounded-pill px-4 ${
+                    project.disabled ? "disabled" : ""
+                  }`}
+                  onClick={
+                    project.disabled ? (e) => e.preventDefault() : undefined
+                  }
                 >
-                  {t("view")}
+                  {project.buttonText || t("view")}
                 </a>
               </div>
             </div>

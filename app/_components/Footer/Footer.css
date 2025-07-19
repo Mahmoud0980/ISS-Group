@@ -19,6 +19,12 @@
 }
 .footer-brand {
   margin-right: 20px;
+  max-width: 300px;
+}
+.footer-brand p {
+  white-space: normal; /* السماح بلف النص */
+  word-break: break-word; /* كسر الكلمات الطويلة إذا لزم */
+  line-height: 1.6; /* اختيارية: تجعل النص أكثر راحة */
 }
 .footer-brand,
 .footer-links,

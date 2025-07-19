@@ -64,7 +64,7 @@
     "portfolio": "Our projects",
     "items": [
       {
-        "title": "Allamni App",
+        "title": "Teach me",
         "description": "An app that helps students study across different age groups.",
         "link": "#"
       }
@@ -114,6 +114,15 @@
   "ourprojects": {
     "title": "Our Projects",
     "projects": [
+        {
+    "title": "Teach Me",
+    "description": "An app that helps students learn across different age levels.",
+    "image": "/Portfolio.jpg",
+    "link": "#",
+    "buttonText": "Coming Soon",
+    "disabled": true
+  }
+
       
     ],
     "view": "View Project"

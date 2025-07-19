@@ -19,14 +19,14 @@ export default function Contact() {
           <div className="col-lg-7">
             <div className="map-wrapper rounded shadow-sm overflow-hidden">
               <iframe
-                src="https://www.google.com/maps?q=36.206151266424335,37.13912937937083&hl=ar&z=18&output=embed"
-                width="100%"
+                src="https://www.google.com/maps?q=36.206293,37.139148&hl=ar&z=18&output=embed"
+                width="600"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title={t("title")}
+                title="ISS Group"
               />
             </div>
           </div>

@@ -45,7 +45,7 @@ export default function Courses() {
 
         <div className="text-center mt-5">
           <Link href="/courses">
-            <button className="btn btn-outline-secondary rounded px-5 py-2">
+            <button className="btn btn-outline-secondary rounded-pill px-5 py-2">
               {t("more")}
             </button>
           </Link>

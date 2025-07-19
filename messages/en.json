@@ -105,9 +105,9 @@
         "slug": "uiux-pro"
       },
       {
-        "title": "Programming Basics - PHP / Java / C#",
-        "image": "/programming-basics.jpg",
-        "slug": "programming-basics"
+        "title": "Front End - HTML CSS JS",
+        "image": "/frontend.jpg",
+        "slug": "FrontEnd-basics"
       }
     ]
   }, 
@@ -139,56 +139,61 @@
         "description": "Advanced design, user research, and usability testing for professional applications.",
         "link": "/courses/uiux-pro",
         "image": "/uiux-pro.jpg"
+      },
+       {
+        "title": "Front End - HTML CSS JS",
+        "description": "You will learn HTML to build the website structure, CSS to style pages, JavaScript for user interaction, and Git & GitHub to save and share your projects.",
+        "link": "/courses/FrontEnd-basics",
+        "image": "/frontend.jpg"
       }
     ],
     "viewCourse": "View Course"
   },
   "coursesDetail": {
-    "uiux-beginner": {
-      "title": "UI/UX Course - Beginner Level",
-      "description": "An introduction to user experience and interface design using tools like Figma and Adobe XD.",
-      "image": "/uiux.jpg",
-      "duration": "6 weeks",
-      "level": "Beginner",
-      "instructor": "Ms. Razan Daaboul"
-    },
-    "uiux-pro": {
-      "title": "UI/UX Course - Professional Level",
-      "description": "Advanced design, user research, and usability testing for professional applications.",
-      "image": "/uiux-pro.jpg",
-      "duration": "8 weeks",
-      "level": "Professional",
-      "instructor": "Ms. Razan Daaboul"
-    },
-    "programming-basics": {
-      "title": "Programming Basics - PHP / Java / C#",
-      "description": "Core programming concepts using multiple languages to build a strong coding foundation.",
-      "image": "/programming-basics.jpg",
-      "duration": "7 weeks",
-      "level": "Beginner",
-      "instructor": "Eng. Khaled Al-Assad"
-    },
-    "frontend-beginner": {
-      "title": "Frontend - React + Next.js (Beginner Level)",
-      "description": "Learn to build interactive interfaces using React and Next.js with basic CSS and JavaScript concepts.",
-      "image": "/frontend.jpg",
-      "duration": "10 weeks",
-      "level": "Beginner to Intermediate",
-      "instructor": "Eng. Saleem Al-Khatib"
-    },
-    "backend-laravel-beginner": {
-      "title": "Backend - Laravel (Beginner Level)",
-      "description": "Introduction to app development using Laravel, databases, and MVC pattern.",
-      "image": "/backend.png",
-      "duration": "8 weeks",
-      "level": "Beginner",
-      "instructor": "Eng. Hossam Diab"
-    },
-     "durationLabel": "Duration:",
+  "durationLabel": "Duration:",
   "levelLabel": "Level:",
   "instructorLabel": "Instructor:",
+  "trainingDaysLabel": "Training Days:",
+  "trainingTimeLabel": "Time:",
+  "trainingHoursLabel": "Training Hours:",
   "registerNow": "Register Now",
-  "backToCourses": "Back to Courses"
+
+  "uiux-beginner": {
+    "title": "UI/UX Course – Beginner Level",
+    "description": "An introduction to user experience and interface design using tools like Figma and Adobe XD.",
+    "image": "/uiux.jpg",
+    "level": "Beginner",
+    "instructor": "Ms. Alaa Alajl",
+    "trainingDays": "Sunday - Tuesday - Thursday",
+    "trainingTime": "5:00 PM - 7:00 PM",
+    "trainingHours": "30 training hours",
+    "link":"https://docs.google.com/forms/d/e/1FAIpQLSe4aWbwKPaCpEJ7yfUkqKhzz4BMiuDpYl6oxY7keDupm4agQQ/viewform"
+  },
+
+  "uiux-pro": {
+    "title": "UI/UX Course  Advanced Level",
+    "description": "Advanced design, user research, and usability testing for professional applications.",
+    "image": "/uiux-pro.jpg",
+     "level": "Addvanced",
+   "instructor": "Ms. Alaa Alajl",
+     "trainingDays": "Saturday - Monday - Wednesday",
+    "trainingTime": "5:15",
+    "trainingHours": "",
+    "link":"https://forms.gle/NXuqviULjXCJGhz58"
+
+  },"FrontEnd-basics": {
+    "title": "Front End Developer",
+    "description": "HTML CSS JavaScript GIT-GITHUB",
+    "image": "/frontend.jpg",
+     "level": "Basic",
+   "instructor": "Mr. Raef Jaoudat",
+     "trainingDays": "Saturday - Monday - Wednesday",
+    "trainingTime": "3:30 PM - 5:00 PM",
+    "trainingHours": "48 training hours",
+    "link":"https://forms.gle/NXuqviULjXCJGhz58"
+  }
+
+
   },"contact": {
     "title": "Contact Us",
      "dir": "ltr",

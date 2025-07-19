@@ -106,10 +106,10 @@
         "image": "/uiux-pro.jpg",
         "slug": "uiux-pro"
       },
-      {
-        "title": "أساسيات البرمجة - PHP / Java / C#",
-        "image": "/programming-basics.jpg",
-        "slug": "programming-basics"
+     {
+        "title": "تصميم واجهات HTML CSS JS",
+        "image": "/frontend.jpg",
+        "slug": "FrontEnd-basics"
       }
     ]
   },
@@ -141,32 +141,63 @@
         "description": "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
         "link": "/courses/uiux-pro",
         "image": "/uiux-pro.jpg"
+      },
+      {
+         "title": "تصميم واجهات HTML CSS JS",
+        "description": "ستتعلّم  HTML لبناء هيكل الموقع، وCSS لتصميم الصفحات، وJavaScript لتفاعل المستخدم، وGit وGitHub لحفظ ومشاركة المشاريع.",
+        "link": "/courses/FrontEnd-basics",
+        "image": "/frontend.jpg"
       }
     ],
     "viewCourse": "عرض الكورس"
   },
-  "coursesDetail": {
-    "uiux-beginner": {
-      "title": "كورس UI/UX - المستوى الأول",
-      "description": "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام أدوات مثل Figma وAdobe XD.",
-      "image": "/uiux.jpg",
-      "duration": "6 أسابيع",
-      "level": "مبتدئ",
-      "instructor": "أ. رزان دعبول"
-    },
-    "uiux-pro": {
-      "title": "كورس UI/UX - مستوى محترف",
-      "description": "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
-      "image": "/uiux-pro.jpg",
-      "duration": "8 أسابيع",
-      "level": "محترف",
-      "instructor": "أ. رزان دعبول"
-    },
-    "durationLabel": "المدة:",
-    "levelLabel": "المستوى:",
-    "instructorLabel": "المدرب:",
-    "registerNow": "سجّل الآن"
+ "coursesDetail": {
+  "durationLabel": "المدة:",
+  "levelLabel": "المستوى:",
+  "instructorLabel": "المدرب:",
+  "trainingDaysLabel": "أيام التدريب:",
+  "trainingTimeLabel": "الساعة:",
+  "trainingHoursLabel": "مدة التدريب:",
+  "registerNow": "سجّل الآن",
+
+  "uiux-beginner": {
+    "title": "كورس UI/UX - المستوى الأول",
+    "description": "مقدمة في تصميم تجربة المستخدم وواجهة الاستخدام باستخدام أدوات مثل Figma وAdobe XD.",
+    "image": "/uiux.jpg",
+   
+    "level": "مبتدئ",
+    "instructor": "أ.آلاء العجل",
+    "trainingDays": "الأحد - الثلاثاء - الخميس",
+    "trainingTime": "5:00 - 7:00 مساءً",
+    "trainingHours": "30 ساعة تدريبية",
+    "link":"https://docs.google.com/forms/d/e/1FAIpQLSe4aWbwKPaCpEJ7yfUkqKhzz4BMiuDpYl6oxY7keDupm4agQQ/viewform"
+
   },
+
+  "uiux-pro": {
+    "title": "كورس UI/UX - مستوى متقدم",
+    "description": "تصميم متقدم، أبحاث المستخدم، واختبارات الاستخدام لتطبيقات احترافية.",
+    "image": "/uiux-pro.jpg",
+   "level": "متقدم",
+    "instructor": "أ.آلاء العجل",
+    "trainingDays": "سبت - اثنين - اربعاء",
+    "trainingTime": "5:15",
+    "trainingHours": "",
+    "link":"https://forms.gle/NXuqviULjXCJGhz58"
+  },
+  "FrontEnd-basics": {
+  "title": "مطور الواجهة الأمامية",
+  "description": "HTML، CSS، JavaScript، Git وGitHub",
+  "image": "/frontend.jpg",
+  "level": "مبتدئ",
+  "instructor": "م. رائف جودة",
+  "trainingDays": "السبت - الإثنين - الأربعاء",
+  "trainingTime": "3:30 مساءً - 5:00 مساءً",
+  "trainingHours": "48 ساعة تدريبية",
+  "link": "https://forms.gle/NXuqviULjXCJGhz58"
+}
+},
+
   "contact": {
     "title": "تواصل معنا",
      "dir": "rtl",

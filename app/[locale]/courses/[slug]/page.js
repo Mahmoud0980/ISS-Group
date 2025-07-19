@@ -34,18 +34,29 @@ export default function CourseDetailsPage() {
           <p>{course.description}</p>
           <ul>
             <li>
-              <strong>{t("durationLabel")}:</strong> {course.duration}
+              <strong>{t("levelLabel")}</strong> {course.level}
             </li>
             <li>
-              <strong>{t("levelLabel")}:</strong> {course.level}
+              <strong>{t("instructorLabel")}</strong> {course.instructor}
             </li>
             <li>
-              <strong>{t("instructorLabel")}:</strong> {course.instructor}
+              <strong>{t("trainingDaysLabel")}</strong> {course.trainingDays}
+            </li>
+            <li>
+              <strong>{t("trainingTimeLabel")}</strong> {course.trainingTime}
+            </li>
+            <li>
+              <strong>{t("trainingHoursLabel")}</strong> {course.trainingHours}
             </li>
           </ul>
-          <Link href="#" className="course-btn">
+          <a
+            href={course.link}
+            className="course-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t("registerNow")}
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ export default function Courses() {
       style={{ padding: "20px", borderRadius: "15px" }}
     >
       <div className="container">
-        <h2 className="text-center mb-5 display-4 fw-bold text-gradient">
+        <h2 className="text-center mb-5 display-4 text-gradient">
           {t("title")}
         </h2>
 
